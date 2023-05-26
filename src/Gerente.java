@@ -13,7 +13,7 @@ public class Gerente extends Personal {
     private String contra;
     private String cargo;
 
-    public Gerente(String usuario, String contra, String cargo, int id, String nombre, int edad, char sexo, String estado, int altura, int peso) {
+    public Gerente(String usuario, String contra, String cargo, int id, String nombre, int edad, String sexo, String estado, int altura, int peso) {
         super(id, nombre, edad, sexo, estado, altura, peso);
         this.usuario = usuario;
         this.contra = contra;
@@ -68,11 +68,11 @@ public class Gerente extends Personal {
         this.edad = edad;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 

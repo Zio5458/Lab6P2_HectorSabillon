@@ -19,7 +19,7 @@ public class General extends Personal {
 
     
     
-    public General(String ocup, String horario, int tiempo, double sueldo, int id, String nombre, int edad, char sexo, String estado, int altura, int peso) {
+    public General(String ocup, String horario, int tiempo, double sueldo, int id, String nombre, int edad, String sexo, String estado, int altura, int peso) {
         super(id, nombre, edad, sexo, estado, altura, peso);
         this.ocup = ocup;
         this.horario = horario;
@@ -83,11 +83,11 @@ public class General extends Personal {
         this.edad = edad;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 

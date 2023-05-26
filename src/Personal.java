@@ -4,7 +4,7 @@ public class Personal {
     protected int id;
     protected String nombre;
     protected int edad;
-    protected char sexo;
+    protected String sexo;
     protected String estado;
     protected int altura;
     protected int peso;
@@ -14,7 +14,7 @@ public class Personal {
 
     
     
-    public Personal(int id, String nombre, int edad, char sexo, String estado, int altura, int peso) {
+    public Personal(int id, String nombre, int edad, String sexo, String estado, int altura, int peso) {
         this.id = id;
         this.nombre = nombre;
         this.edad = edad;
@@ -48,11 +48,11 @@ public class Personal {
         this.edad = edad;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
