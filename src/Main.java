@@ -17,7 +17,7 @@ import javax.swing.tree.DefaultTreeModel;
 public class Main extends javax.swing.JFrame {
 
     static ArrayList<Personal> personas = new ArrayList();
-    
+
     /**
      * Creates new form Main
      */
@@ -453,9 +453,9 @@ public class Main extends javax.swing.JFrame {
 
     private void botonObjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonObjetoMouseClicked
         dialogObjeto.pack();
-        dialogObjeto.setModal(true);        
+        dialogObjeto.setModal(true);
         dialogObjeto.setLocationRelativeTo(this);
-        dialogObjeto.setVisible(true);        
+        dialogObjeto.setVisible(true);
     }//GEN-LAST:event_botonObjetoMouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
@@ -475,8 +475,8 @@ public class Main extends javax.swing.JFrame {
         emp.setTiempo(Integer.parseInt(tiempo_personal.getText()));
         emp.setSueldo(Double.parseDouble(sueldo_personal.getText()));
         DefaultMutableTreeNode personal = new DefaultMutableTreeNode(emp);
-        ((DefaultMutableTreeNode)root.getChildAt(1)).add(personal);
-        
+        ((DefaultMutableTreeNode) root.getChildAt(1)).add(personal);
+
         modelo.reload();
         jTreePersonal.setModel(modelo);
         JOptionPane.showMessageDialog(this, "Personal agregado exitosamente");
@@ -500,8 +500,8 @@ public class Main extends javax.swing.JFrame {
         emp.setContra(contra_gerente.getText());
         emp.setCargo(cargo_gerente.getText());
         DefaultMutableTreeNode personal = new DefaultMutableTreeNode(emp);
-        ((DefaultMutableTreeNode)root.getChildAt(0)).add(personal);
-        
+        ((DefaultMutableTreeNode) root.getChildAt(0)).add(personal);
+
         modelo.reload();
         jTreePersonal.setModel(modelo);
         JOptionPane.showMessageDialog(this, "Gerente agregado exitosamente");
@@ -510,23 +510,57 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_agregarGerenteMouseClicked
 
     private void color_objetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_color_objetoMouseClicked
-        color_objeto.setBackground(JColorChooser.showDialog(this,"Ingrese color", Color.yellow));
+        color_objeto.setBackground(JColorChooser.showDialog(this, "Ingrese color", Color.yellow));
     }//GEN-LAST:event_color_objetoMouseClicked
 
     private void agregarObjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarObjetoMouseClicked
-        if (comboBoxObjeto.getSelectedItem().equals("Zapatos")){
+        Personal p = new Personal();
+        for (int i = 0; i < personas.size(); i++) {
+            if (personas.get(i).equals(comboBoxPersonas.getSelectedItem())){
+                p = personas.get(i);
+            }
+        }
+        
+        if (comboBoxObjeto.getSelectedItem().equals("Zapatos")) {
             double talla = Double.parseDouble(JOptionPane.showInputDialog(this, "Ingrese talla"));
             String desc = JOptionPane.showInputDialog(this, "Ingrese descripcion: ");
             int com = Integer.parseInt(JOptionPane.showInputDialog(this, "Ingrese comodidad (1 - 10)"));
-            Zapatos zapato = new Zapatos(talla, desc, com, color_objeto.getBackground(), descripcion_o.getText(), marca_o.getText(), tam_o.getText(), (Personal)comboBoxPersonas.getSelectedItem());
-        } else if (comboBoxObjeto.getSelectedItem().equals("Ropa")){
+            Zapatos zapato = new Zapatos(talla, desc, com, color_objeto.getBackground(), descripcion_o.getText(), marca_o.getText(), tam_o.getText(), p);
+
+            DefaultTreeModel modelo = (DefaultTreeModel) jTreeObjeto.getModel();
+            DefaultMutableTreeNode root = (DefaultMutableTreeNode) modelo.getRoot();
+            DefaultMutableTreeNode objeto = new DefaultMutableTreeNode(zapato);
+            ((DefaultMutableTreeNode) root.getChildAt(0)).add(objeto);
+            modelo.reload();
+            jTreeObjeto.setModel(modelo);
+            JOptionPane.showMessageDialog(this, "Zapato agregado exitosamente");
+        } else if (comboBoxObjeto.getSelectedItem().equals("Ropa")) {
             char talla = (JOptionPane.showInputDialog(this, "Ingrese talla")).charAt(0);
             String tela = JOptionPane.showInputDialog(this, "Ingrese tela");
             String pais = JOptionPane.showInputDialog(this, "Ingrese pais de fabricacion");
-            Ropa ropa = new Ropa(talla, tela, pais, color_objeto.getBackground(), descripcion_o.getText(), marca_o.getText(), tam_o.getText(), (Personal)comboBoxPersonas.getSelectedItem());
-        } else if (comboBoxObjeto.getSelectedItem().equals("Objetos de Casa")){
-            
+            Ropa ropa = new Ropa(talla, tela, pais, color_objeto.getBackground(), descripcion_o.getText(), marca_o.getText(), tam_o.getText(), p);
+            DefaultTreeModel modelo = (DefaultTreeModel) jTreeObjeto.getModel();
+            DefaultMutableTreeNode root = (DefaultMutableTreeNode) modelo.getRoot();
+            DefaultMutableTreeNode objeto = new DefaultMutableTreeNode(ropa);
+            ((DefaultMutableTreeNode) root.getChildAt(1)).add(objeto);
+            modelo.reload();
+            jTreeObjeto.setModel(modelo);
+            JOptionPane.showMessageDialog(this, "Ropa agregada exitosamente");
+        } else if (comboBoxObjeto.getSelectedItem().equals("Objetos de Casa")) {
+            String lugar = JOptionPane.showInputDialog(this, "Ingrese lugar de uso");
+            String instrucciones = JOptionPane.showInputDialog(this, "Ingrese direcciones");
+            int garantia = Integer.parseInt(JOptionPane.showInputDialog(this, "Ingrese tiempo de garantia"));
+            obj_Hogar obj = new obj_Hogar(lugar, instrucciones, garantia, color_objeto.getBackground(), descripcion_o.getText(), marca_o.getText(), tam_o.getText(), p);
+
+            DefaultTreeModel modelo = (DefaultTreeModel) jTreeObjeto.getModel();
+            DefaultMutableTreeNode root = (DefaultMutableTreeNode) modelo.getRoot();
+            DefaultMutableTreeNode objeto = new DefaultMutableTreeNode(obj);
+            ((DefaultMutableTreeNode) root.getChildAt(2)).add(objeto);
+            modelo.reload();
+            jTreeObjeto.setModel(modelo);
+            JOptionPane.showMessageDialog(this, "Objeto agregado exitosamente");
         }
+
     }//GEN-LAST:event_agregarObjetoMouseClicked
 
     /**
@@ -564,7 +598,7 @@ public class Main extends javax.swing.JFrame {
         });
     }
 
-       
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Eliminar;
     private javax.swing.JMenuItem Modificar;
