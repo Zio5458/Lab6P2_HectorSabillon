@@ -14,6 +14,11 @@ public class General extends Personal {
     private int tiempo;
     private double sueldo;
 
+    public General() {
+    }
+
+    
+    
     public General(String ocup, String horario, int tiempo, double sueldo, int id, String nombre, int edad, char sexo, String estado, int altura, int peso) {
         super(id, nombre, edad, sexo, estado, altura, peso);
         this.ocup = ocup;

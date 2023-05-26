@@ -9,6 +9,11 @@ public class Personal {
     protected int altura;
     protected int peso;
 
+    public Personal() {
+    }
+
+    
+    
     public Personal(int id, String nombre, int edad, char sexo, String estado, int altura, int peso) {
         this.id = id;
         this.nombre = nombre;
