@@ -344,6 +344,11 @@ public class Main extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel1MouseClicked(evt);
+            }
+        });
 
         botonPersonal.setText("Personal");
         botonPersonal.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -562,6 +567,11 @@ public class Main extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_agregarObjetoMouseClicked
+
+    private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
+        jPopupMenu1.setLocation(evt.getX(), evt.getY());
+        jPopupMenu1.setVisible(true);
+    }//GEN-LAST:event_jPanel1MouseClicked
 
     /**
      * @param args the command line arguments
