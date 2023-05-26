@@ -93,6 +93,9 @@ public class Main extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         color_objeto = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        comboBoxPersonas = new javax.swing.JComboBox<>();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         botonPersonal = new javax.swing.JButton();
@@ -274,6 +277,8 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        comboBoxPersonas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout dialogObjetoLayout = new javax.swing.GroupLayout(dialogObjeto.getContentPane());
         dialogObjeto.getContentPane().setLayout(dialogObjetoLayout);
         dialogObjetoLayout.setHorizontalGroup(
@@ -281,18 +286,21 @@ public class Main extends javax.swing.JFrame {
             .addGroup(dialogObjetoLayout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(dialogObjetoLayout.createSequentialGroup()
                         .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(32, 32, 32)
                         .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField3)
                             .addComponent(color_objeto, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
-                            .addComponent(jTextField1))))
+                            .addComponent(jTextField1)
+                            .addComponent(jTextField2)
+                            .addComponent(comboBoxPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(517, Short.MAX_VALUE))
         );
         dialogObjetoLayout.setVerticalGroup(
@@ -309,12 +317,18 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel23)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel24)
+                .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel25)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel26)
-                .addContainerGap(277, Short.MAX_VALUE))
+                .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(comboBoxPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(252, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -433,6 +447,7 @@ public class Main extends javax.swing.JFrame {
         dialogObjeto.setModal(true);        
         dialogObjeto.setLocationRelativeTo(this);
         dialogObjeto.setVisible(true);
+        
     }//GEN-LAST:event_botonObjetoMouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
@@ -523,6 +538,7 @@ public class Main extends javax.swing.JFrame {
         });
     }
 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Eliminar;
     private javax.swing.JMenuItem Modificar;
@@ -534,6 +550,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton botonPersonal;
     private javax.swing.JTextField cargo_gerente;
     private javax.swing.JButton color_objeto;
+    private javax.swing.JComboBox<String> comboBoxPersonas;
     private javax.swing.JTextField contra_gerente;
     private javax.swing.JDialog dialogGerente;
     private javax.swing.JDialog dialogObjeto;
@@ -579,6 +596,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     private javax.swing.JTree jTreeObjeto;
     private javax.swing.JTree jTreePersonal;
     private javax.swing.JTextField nombre_gerente;
