@@ -102,7 +102,7 @@ public class Gerente extends Personal {
 
     @Override
     public String toString() {
-        return "Gerente{" + "usuario=" + usuario + ", contra=" + contra + ", cargo=" + cargo + '}';
+        return super.toString();
     }
     
     

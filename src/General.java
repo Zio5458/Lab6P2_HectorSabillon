@@ -117,7 +117,7 @@ public class General extends Personal {
 
     @Override
     public String toString() {
-        return "General{" + "ocup=" + ocup + ", horario=" + horario + ", tiempo=" + tiempo + ", sueldo=" + sueldo + '}';
+        return super.toString();
     }
     
     

@@ -157,7 +157,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(sueldo_personal))
                 .addGap(102, 102, 102)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(91, Short.MAX_VALUE))
+                .addContainerGap(142, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -211,7 +211,7 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(sueldo_personal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
 
         dialogPersonal.getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 450));
@@ -313,7 +313,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(94, 94, 94)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 135, Short.MAX_VALUE))
+                .addGap(0, 174, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -323,10 +323,10 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
                     .addComponent(jScrollPane1))
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addContainerGap(142, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 640));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -356,6 +356,21 @@ public class Main extends javax.swing.JFrame {
         DefaultTreeModel modelo = (DefaultTreeModel) jTreePersonal.getModel();
         DefaultMutableTreeNode root = (DefaultMutableTreeNode) modelo.getRoot();
         
+        General emp = new General();
+        emp.setId(Integer.parseInt(id_personal.getText()));
+        emp.setNombre(nombre_personal.getText());
+        emp.setEdad((Integer)edad_personal.getValue());
+        emp.setSexo((char) sexo_personal.getSelectedItem());
+        emp.setEstado((String) estado_personal.getSelectedItem());
+        emp.setAltura(Integer.parseInt(altura_personal.getText()));
+        emp.setPeso(Integer.parseInt(peso_personal.getText()));
+        emp.setOcup(ocupacion_personal.getText());
+        emp.setHorario(horario_personal.getText());
+        emp.setTiempo(Integer.parseInt(tiempo_personal.getText()));
+        emp.setSueldo(Double.parseDouble(sueldo_personal.getText()));
+        DefaultMutableTreeNode personal = new DefaultMutableTreeNode(emp);
+        root.add(personal);
+        modelo.reload();
     }//GEN-LAST:event_jButton1MouseClicked
 
     /**
