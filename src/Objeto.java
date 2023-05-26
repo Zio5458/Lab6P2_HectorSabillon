@@ -60,7 +60,7 @@ public class Objeto {
 
     @Override
     public String toString() {
-        return "Objeto{" + "color=" + color + ", desc=" + desc + ", marca=" + marca + ", tam=" + tam + ", persona=" + persona + '}';
+        return marca + " - " + tam;
     }
     
     

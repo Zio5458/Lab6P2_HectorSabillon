@@ -89,7 +89,7 @@ public class obj_Hogar extends Objeto {
 
     @Override
     public String toString() {
-        return "obj_Hogar{" + "lugar=" + lugar + ", instrucciones=" + instrucciones + ", garantia=" + garantia + '}';
+        return super.toString();
     }
     
     

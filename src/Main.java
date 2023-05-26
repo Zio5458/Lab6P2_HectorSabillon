@@ -1,4 +1,8 @@
 
+import java.awt.Color;
+import java.util.ArrayList;
+import javax.swing.JColorChooser;
+import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 
@@ -12,6 +16,8 @@ import javax.swing.tree.DefaultTreeModel;
  */
 public class Main extends javax.swing.JFrame {
 
+    static ArrayList<Personal> personas = new ArrayList();
+    
     /**
      * Creates new form Main
      */
@@ -57,7 +63,36 @@ public class Main extends javax.swing.JFrame {
         sueldo_personal = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         dialogGerente = new javax.swing.JDialog();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        id_gerente = new javax.swing.JTextField();
+        nombre_gerente = new javax.swing.JTextField();
+        edad_gerente = new javax.swing.JSpinner();
+        sexo_gerente = new javax.swing.JComboBox<>();
+        estado_gerente = new javax.swing.JComboBox<>();
+        altura_gerente = new javax.swing.JTextField();
+        peso_gerente = new javax.swing.JTextField();
+        usuario_gerente = new javax.swing.JTextField();
+        contra_gerente = new javax.swing.JTextField();
+        cargo_gerente = new javax.swing.JTextField();
+        agregarGerente = new javax.swing.JButton();
         dialogObjeto = new javax.swing.JDialog();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        color_objeto = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         botonPersonal = new javax.swing.JButton();
@@ -149,27 +184,137 @@ public class Main extends javax.swing.JFrame {
         dialogPersonal.getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 141, 55));
 
         dialogGerente.setBackground(new java.awt.Color(255, 255, 255));
+        dialogGerente.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout dialogGerenteLayout = new javax.swing.GroupLayout(dialogGerente.getContentPane());
-        dialogGerente.getContentPane().setLayout(dialogGerenteLayout);
-        dialogGerenteLayout.setHorizontalGroup(
-            dialogGerenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 693, Short.MAX_VALUE)
-        );
-        dialogGerenteLayout.setVerticalGroup(
-            dialogGerenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 431, Short.MAX_VALUE)
-        );
+        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel12.setText("ID");
+        dialogGerente.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 27, 43, -1));
+
+        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel13.setText("Nombre");
+        dialogGerente.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 61, 56, -1));
+
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel14.setText("Edad");
+        dialogGerente.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 122, 56, -1));
+
+        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel15.setText("Sexo");
+        dialogGerente.getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 184, 56, -1));
+
+        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel16.setText("Estado");
+        dialogGerente.getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 218, 56, -1));
+
+        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel17.setText("Altura");
+        dialogGerente.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 252, 56, -1));
+
+        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel18.setText("Peso");
+        dialogGerente.getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 286, 56, -1));
+
+        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel19.setText("Usuario");
+        dialogGerente.getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 320, 56, -1));
+
+        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel20.setText("Contra");
+        dialogGerente.getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 354, 56, -1));
+
+        jLabel21.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel21.setText("Cargo");
+        dialogGerente.getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 382, 56, -1));
+        dialogGerente.getContentPane().add(id_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 24, 102, -1));
+        dialogGerente.getContentPane().add(nombre_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 58, 102, -1));
+        dialogGerente.getContentPane().add(edad_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 119, 102, -1));
+
+        sexo_gerente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "M", "F" }));
+        dialogGerente.getContentPane().add(sexo_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 181, 102, -1));
+
+        estado_gerente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Soltero", "Casado", "Divorciado", "Viudo" }));
+        dialogGerente.getContentPane().add(estado_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 215, 102, -1));
+        dialogGerente.getContentPane().add(altura_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 249, 102, -1));
+        dialogGerente.getContentPane().add(peso_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 283, 102, -1));
+        dialogGerente.getContentPane().add(usuario_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 317, 102, -1));
+        dialogGerente.getContentPane().add(contra_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 351, 102, -1));
+        dialogGerente.getContentPane().add(cargo_gerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 382, 102, -1));
+
+        agregarGerente.setText("Agregar");
+        agregarGerente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                agregarGerenteMouseClicked(evt);
+            }
+        });
+        dialogGerente.getContentPane().add(agregarGerente, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, 162, 77));
+
+        dialogObjeto.setBackground(new java.awt.Color(255, 255, 255));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zapatos", "Ropa", "Objetos de Casa" }));
+
+        jLabel22.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel22.setText("Color");
+
+        jLabel23.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel23.setText("Descripcion");
+
+        jLabel24.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel24.setText("Marca");
+
+        jLabel25.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel25.setText("Tamano");
+
+        jLabel26.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel26.setText("Persona");
+
+        color_objeto.setBackground(new java.awt.Color(0, 0, 0));
+        color_objeto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                color_objetoMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout dialogObjetoLayout = new javax.swing.GroupLayout(dialogObjeto.getContentPane());
         dialogObjeto.getContentPane().setLayout(dialogObjetoLayout);
         dialogObjetoLayout.setHorizontalGroup(
             dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(dialogObjetoLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(dialogObjetoLayout.createSequentialGroup()
+                        .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(32, 32, 32)
+                        .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(color_objeto, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
+                            .addComponent(jTextField1))))
+                .addContainerGap(517, Short.MAX_VALUE))
         );
         dialogObjetoLayout.setVerticalGroup(
             dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(dialogObjetoLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(color_objeto, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(11, 11, 11)
+                .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel24)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel25)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel26)
+                .addContainerGap(277, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -225,17 +370,19 @@ public class Main extends javax.swing.JFrame {
 
         javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Personal");
         javax.swing.tree.DefaultMutableTreeNode treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Gerente");
-        javax.swing.tree.DefaultMutableTreeNode treeNode3 = new javax.swing.tree.DefaultMutableTreeNode(".");
-        treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
         treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Personal");
-        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode(".");
-        treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
         jTreePersonal.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane1.setViewportView(jTreePersonal);
 
-        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
+        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Objetos");
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Zapatos");
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Ropa");
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Objetos de Hogar");
+        treeNode1.add(treeNode2);
         jTreeObjeto.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane2.setViewportView(jTreeObjeto);
 
@@ -248,8 +395,8 @@ public class Main extends javax.swing.JFrame {
                 .addGap(72, 72, 72)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(92, 92, 92)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 173, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 132, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -309,7 +456,37 @@ public class Main extends javax.swing.JFrame {
         
         modelo.reload();
         jTreePersonal.setModel(modelo);
+        JOptionPane.showMessageDialog(this, "Personal agregado exitosamente");
+        personas.add(emp);
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void agregarGerenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarGerenteMouseClicked
+        DefaultTreeModel modelo = (DefaultTreeModel) jTreePersonal.getModel();
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode) modelo.getRoot();
+
+        Gerente emp = new Gerente();
+        emp.setId(Integer.parseInt(id_gerente.getText()));
+        emp.setNombre(nombre_gerente.getText());
+        emp.setEdad((Integer) edad_gerente.getValue());
+        emp.setSexo((String) sexo_gerente.getSelectedItem());
+        emp.setEstado((String) estado_gerente.getSelectedItem());
+        emp.setAltura(Integer.parseInt(altura_gerente.getText()));
+        emp.setPeso(Integer.parseInt(peso_gerente.getText()));
+        emp.setUsuario(usuario_gerente.getText());
+        emp.setContra(contra_gerente.getText());
+        emp.setCargo(cargo_gerente.getText());
+        DefaultMutableTreeNode personal = new DefaultMutableTreeNode(emp);
+        ((DefaultMutableTreeNode)root.getChildAt(0)).add(personal);
+        
+        modelo.reload();
+        jTreePersonal.setModel(modelo);
+        JOptionPane.showMessageDialog(this, "Gerente agregado exitosamente");
+        personas.add(emp);
+    }//GEN-LAST:event_agregarGerenteMouseClicked
+
+    private void color_objetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_color_objetoMouseClicked
+        color_objeto.setBackground(JColorChooser.showDialog(this,"Ingrese color", Color.yellow));
+    }//GEN-LAST:event_color_objetoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -349,22 +526,46 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Eliminar;
     private javax.swing.JMenuItem Modificar;
+    private javax.swing.JButton agregarGerente;
+    private javax.swing.JTextField altura_gerente;
     private javax.swing.JTextField altura_personal;
     private javax.swing.JButton botonGerente;
     private javax.swing.JButton botonObjeto;
     private javax.swing.JButton botonPersonal;
+    private javax.swing.JTextField cargo_gerente;
+    private javax.swing.JButton color_objeto;
+    private javax.swing.JTextField contra_gerente;
     private javax.swing.JDialog dialogGerente;
     private javax.swing.JDialog dialogObjeto;
     private javax.swing.JDialog dialogPersonal;
+    private javax.swing.JSpinner edad_gerente;
     private javax.swing.JSpinner edad_personal;
+    private javax.swing.JComboBox<String> estado_gerente;
     private javax.swing.JComboBox<String> estado_personal;
     private javax.swing.JTextField horario_personal;
+    private javax.swing.JTextField id_gerente;
     private javax.swing.JTextField id_personal;
     private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -377,13 +578,18 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTree jTreeObjeto;
     private javax.swing.JTree jTreePersonal;
+    private javax.swing.JTextField nombre_gerente;
     private javax.swing.JTextField nombre_personal;
     private javax.swing.JTextField ocupacion_personal;
+    private javax.swing.JTextField peso_gerente;
     private javax.swing.JTextField peso_personal;
+    private javax.swing.JComboBox<String> sexo_gerente;
     private javax.swing.JComboBox<String> sexo_personal;
     private javax.swing.JTextField sueldo_personal;
     private javax.swing.JTextField tiempo_personal;
+    private javax.swing.JTextField usuario_gerente;
     // End of variables declaration//GEN-END:variables
 }

@@ -13,6 +13,11 @@ public class Gerente extends Personal {
     private String contra;
     private String cargo;
 
+    public Gerente() {
+    }
+
+    
+    
     public Gerente(String usuario, String contra, String cargo, int id, String nombre, int edad, String sexo, String estado, int altura, int peso) {
         super(id, nombre, edad, sexo, estado, altura, peso);
         this.usuario = usuario;
