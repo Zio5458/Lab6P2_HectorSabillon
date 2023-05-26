@@ -85,17 +85,18 @@ public class Main extends javax.swing.JFrame {
         cargo_gerente = new javax.swing.JTextField();
         agregarGerente = new javax.swing.JButton();
         dialogObjeto = new javax.swing.JDialog();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        comboBoxObjeto = new javax.swing.JComboBox<>();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         color_objeto = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        descripcion_o = new javax.swing.JTextField();
+        marca_o = new javax.swing.JTextField();
+        tam_o = new javax.swing.JTextField();
         comboBoxPersonas = new javax.swing.JComboBox<>();
+        agregarObjeto = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         botonPersonal = new javax.swing.JButton();
@@ -253,7 +254,7 @@ public class Main extends javax.swing.JFrame {
 
         dialogObjeto.setBackground(new java.awt.Color(255, 255, 255));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zapatos", "Ropa", "Objetos de Casa" }));
+        comboBoxObjeto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zapatos", "Ropa", "Objetos de Casa" }));
 
         jLabel22.setForeground(new java.awt.Color(0, 0, 0));
         jLabel22.setText("Color");
@@ -277,7 +278,12 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        comboBoxPersonas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        agregarObjeto.setText("Agregar");
+        agregarObjeto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                agregarObjetoMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout dialogObjetoLayout = new javax.swing.GroupLayout(dialogObjeto.getContentPane());
         dialogObjeto.getContentPane().setLayout(dialogObjetoLayout);
@@ -287,7 +293,7 @@ public class Main extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboBoxObjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(dialogObjetoLayout.createSequentialGroup()
                         .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -296,18 +302,20 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(32, 32, 32)
                         .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField3)
+                            .addComponent(tam_o)
                             .addComponent(color_objeto, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
-                            .addComponent(jTextField1)
-                            .addComponent(jTextField2)
-                            .addComponent(comboBoxPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(517, Short.MAX_VALUE))
+                            .addComponent(descripcion_o)
+                            .addComponent(marca_o)
+                            .addComponent(comboBoxPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(131, 131, 131)
+                        .addComponent(agregarObjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(196, Short.MAX_VALUE))
         );
         dialogObjetoLayout.setVerticalGroup(
             dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dialogObjetoLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(comboBoxObjeto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
@@ -315,20 +323,21 @@ public class Main extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(descripcion_o, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel24)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(marca_o, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(agregarObjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tam_o, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(dialogObjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
                     .addComponent(comboBoxPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(252, Short.MAX_VALUE))
+                .addContainerGap(202, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -446,8 +455,7 @@ public class Main extends javax.swing.JFrame {
         dialogObjeto.pack();
         dialogObjeto.setModal(true);        
         dialogObjeto.setLocationRelativeTo(this);
-        dialogObjeto.setVisible(true);
-        
+        dialogObjeto.setVisible(true);        
     }//GEN-LAST:event_botonObjetoMouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
@@ -473,6 +481,7 @@ public class Main extends javax.swing.JFrame {
         jTreePersonal.setModel(modelo);
         JOptionPane.showMessageDialog(this, "Personal agregado exitosamente");
         personas.add(emp);
+        comboBoxPersonas.addItem(emp.getNombre());
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void agregarGerenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarGerenteMouseClicked
@@ -497,11 +506,28 @@ public class Main extends javax.swing.JFrame {
         jTreePersonal.setModel(modelo);
         JOptionPane.showMessageDialog(this, "Gerente agregado exitosamente");
         personas.add(emp);
+        comboBoxPersonas.addItem(emp.getNombre());
     }//GEN-LAST:event_agregarGerenteMouseClicked
 
     private void color_objetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_color_objetoMouseClicked
         color_objeto.setBackground(JColorChooser.showDialog(this,"Ingrese color", Color.yellow));
     }//GEN-LAST:event_color_objetoMouseClicked
+
+    private void agregarObjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarObjetoMouseClicked
+        if (comboBoxObjeto.getSelectedItem().equals("Zapatos")){
+            double talla = Double.parseDouble(JOptionPane.showInputDialog(this, "Ingrese talla"));
+            String desc = JOptionPane.showInputDialog(this, "Ingrese descripcion: ");
+            int com = Integer.parseInt(JOptionPane.showInputDialog(this, "Ingrese comodidad (1 - 10)"));
+            Zapatos zapato = new Zapatos(talla, desc, com, color_objeto.getBackground(), descripcion_o.getText(), marca_o.getText(), tam_o.getText(), (Personal)comboBoxPersonas.getSelectedItem());
+        } else if (comboBoxObjeto.getSelectedItem().equals("Ropa")){
+            char talla = (JOptionPane.showInputDialog(this, "Ingrese talla")).charAt(0);
+            String tela = JOptionPane.showInputDialog(this, "Ingrese tela");
+            String pais = JOptionPane.showInputDialog(this, "Ingrese pais de fabricacion");
+            Ropa ropa = new Ropa(talla, tela, pais, color_objeto.getBackground(), descripcion_o.getText(), marca_o.getText(), tam_o.getText(), (Personal)comboBoxPersonas.getSelectedItem());
+        } else if (comboBoxObjeto.getSelectedItem().equals("Objetos de Casa")){
+            
+        }
+    }//GEN-LAST:event_agregarObjetoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -538,11 +564,12 @@ public class Main extends javax.swing.JFrame {
         });
     }
 
-    
+       
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Eliminar;
     private javax.swing.JMenuItem Modificar;
     private javax.swing.JButton agregarGerente;
+    private javax.swing.JButton agregarObjeto;
     private javax.swing.JTextField altura_gerente;
     private javax.swing.JTextField altura_personal;
     private javax.swing.JButton botonGerente;
@@ -550,8 +577,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton botonPersonal;
     private javax.swing.JTextField cargo_gerente;
     private javax.swing.JButton color_objeto;
+    private javax.swing.JComboBox<String> comboBoxObjeto;
     private javax.swing.JComboBox<String> comboBoxPersonas;
     private javax.swing.JTextField contra_gerente;
+    private javax.swing.JTextField descripcion_o;
     private javax.swing.JDialog dialogGerente;
     private javax.swing.JDialog dialogObjeto;
     private javax.swing.JDialog dialogPersonal;
@@ -563,7 +592,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField id_gerente;
     private javax.swing.JTextField id_personal;
     private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -595,11 +623,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTree jTreeObjeto;
     private javax.swing.JTree jTreePersonal;
+    private javax.swing.JTextField marca_o;
     private javax.swing.JTextField nombre_gerente;
     private javax.swing.JTextField nombre_personal;
     private javax.swing.JTextField ocupacion_personal;
@@ -608,6 +634,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> sexo_gerente;
     private javax.swing.JComboBox<String> sexo_personal;
     private javax.swing.JTextField sueldo_personal;
+    private javax.swing.JTextField tam_o;
     private javax.swing.JTextField tiempo_personal;
     private javax.swing.JTextField usuario_gerente;
     // End of variables declaration//GEN-END:variables
