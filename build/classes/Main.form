@@ -50,14 +50,14 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="90" width="37" height="-1"/>
+              <AbsoluteConstraints x="50" y="10" width="37" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="id_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="90" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="10" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -70,7 +70,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="130" width="54" height="-1"/>
+              <AbsoluteConstraints x="50" y="50" width="54" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -83,21 +83,21 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="170" width="54" height="-1"/>
+              <AbsoluteConstraints x="50" y="90" width="54" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="nombre_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="130" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="50" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JSpinner" name="edad_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="170" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="90" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -115,7 +115,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="210" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="130" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -135,7 +135,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="240" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="160" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -148,7 +148,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="240" width="54" height="-1"/>
+              <AbsoluteConstraints x="50" y="160" width="54" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -161,7 +161,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="210" width="54" height="-1"/>
+              <AbsoluteConstraints x="50" y="130" width="54" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -174,7 +174,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="280" width="54" height="-1"/>
+              <AbsoluteConstraints x="50" y="200" width="54" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -187,7 +187,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="320" width="54" height="-1"/>
+              <AbsoluteConstraints x="50" y="240" width="54" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -200,28 +200,28 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="350" width="-1" height="-1"/>
+              <AbsoluteConstraints x="50" y="270" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="altura_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="280" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="200" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="peso_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="320" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="240" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="ocupacion_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="350" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="270" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -234,7 +234,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="390" width="-1" height="-1"/>
+              <AbsoluteConstraints x="50" y="310" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -247,7 +247,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="420" width="-1" height="-1"/>
+              <AbsoluteConstraints x="50" y="340" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -260,28 +260,28 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="70" y="460" width="-1" height="-1"/>
+              <AbsoluteConstraints x="50" y="380" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="horario_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="390" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="310" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="tiempo_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="420" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="340" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="sueldo_personal">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="450" width="119" height="-1"/>
+              <AbsoluteConstraints x="140" y="380" width="119" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -294,23 +294,28 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="420" y="250" width="141" height="55"/>
+              <AbsoluteConstraints x="410" y="190" width="141" height="55"/>
             </Constraint>
           </Constraints>
         </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JDialog" name="dialogGerente">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="693" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="431" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -373,10 +378,10 @@
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="141" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                   <Component id="jScrollPane2" min="-2" pref="139" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="174" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="173" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -464,7 +469,7 @@
             <Component class="javax.swing.JTree" name="jTreePersonal">
               <Properties>
                 <Property name="model" type="javax.swing.tree.TreeModel" editor="org.netbeans.modules.form.editors2.TreeModelEditor">
-                  <TreeModel code="Personal&#xa; Gerente&#xa;  Gerente de Planta&#xa;   .&#xa;  Gerente de Sucursal&#xa;   .&#xa; Personal General&#xa;  .&#xa;  "/>
+                  <TreeModel code="Personal&#xa; Gerente&#xa;  .&#xa; Personal&#xa;  ."/>
                 </Property>
               </Properties>
             </Component>
@@ -478,6 +483,11 @@
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
             <Component class="javax.swing.JTree" name="jTreeObjeto">
+              <Properties>
+                <Property name="model" type="javax.swing.tree.TreeModel" editor="org.netbeans.modules.form.editors2.TreeModelEditor">
+                  <TreeModel code=""/>
+                </Property>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>

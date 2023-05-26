@@ -83,62 +83,62 @@ public class Main extends javax.swing.JFrame {
 
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("ID");
-        dialogPersonal.getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 37, -1));
-        dialogPersonal.getContentPane().add(id_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 119, -1));
+        dialogPersonal.getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 37, -1));
+        dialogPersonal.getContentPane().add(id_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 119, -1));
 
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nombre");
-        dialogPersonal.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 54, -1));
+        dialogPersonal.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 54, -1));
 
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Edad");
-        dialogPersonal.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 54, -1));
-        dialogPersonal.getContentPane().add(nombre_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 119, -1));
-        dialogPersonal.getContentPane().add(edad_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 119, -1));
+        dialogPersonal.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 54, -1));
+        dialogPersonal.getContentPane().add(nombre_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 119, -1));
+        dialogPersonal.getContentPane().add(edad_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 119, -1));
 
         sexo_personal.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "M", "F" }));
-        dialogPersonal.getContentPane().add(sexo_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 119, -1));
+        dialogPersonal.getContentPane().add(sexo_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 119, -1));
 
         estado_personal.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Soltero", "Casado", "Divorciado", "Viudo" }));
-        dialogPersonal.getContentPane().add(estado_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 119, -1));
+        dialogPersonal.getContentPane().add(estado_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 119, -1));
 
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Estado");
-        dialogPersonal.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 54, -1));
+        dialogPersonal.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 54, -1));
 
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Sexo");
-        dialogPersonal.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 54, -1));
+        dialogPersonal.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 54, -1));
 
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Altura");
-        dialogPersonal.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, 54, -1));
+        dialogPersonal.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 54, -1));
 
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Peso");
-        dialogPersonal.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 54, -1));
+        dialogPersonal.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 54, -1));
 
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Ocupacion");
-        dialogPersonal.getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, -1, -1));
-        dialogPersonal.getContentPane().add(altura_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 119, -1));
-        dialogPersonal.getContentPane().add(peso_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 119, -1));
-        dialogPersonal.getContentPane().add(ocupacion_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 119, -1));
+        dialogPersonal.getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, -1));
+        dialogPersonal.getContentPane().add(altura_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 119, -1));
+        dialogPersonal.getContentPane().add(peso_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 119, -1));
+        dialogPersonal.getContentPane().add(ocupacion_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 119, -1));
 
         jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Horario");
-        dialogPersonal.getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, -1, -1));
+        dialogPersonal.getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, -1, -1));
 
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Tiempo");
-        dialogPersonal.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, -1, -1));
+        dialogPersonal.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
 
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Sueldo");
-        dialogPersonal.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, -1, -1));
-        dialogPersonal.getContentPane().add(horario_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, 119, -1));
-        dialogPersonal.getContentPane().add(tiempo_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, 119, -1));
-        dialogPersonal.getContentPane().add(sueldo_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, 119, -1));
+        dialogPersonal.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, -1));
+        dialogPersonal.getContentPane().add(horario_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, 119, -1));
+        dialogPersonal.getContentPane().add(tiempo_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 340, 119, -1));
+        dialogPersonal.getContentPane().add(sueldo_personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, 119, -1));
 
         jButton1.setText("Agregar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -146,17 +146,19 @@ public class Main extends javax.swing.JFrame {
                 jButton1MouseClicked(evt);
             }
         });
-        dialogPersonal.getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 250, 141, 55));
+        dialogPersonal.getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 141, 55));
+
+        dialogGerente.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout dialogGerenteLayout = new javax.swing.GroupLayout(dialogGerente.getContentPane());
         dialogGerente.getContentPane().setLayout(dialogGerenteLayout);
         dialogGerenteLayout.setHorizontalGroup(
             dialogGerenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 693, Short.MAX_VALUE)
         );
         dialogGerenteLayout.setVerticalGroup(
             dialogGerenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 431, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout dialogObjetoLayout = new javax.swing.GroupLayout(dialogObjeto.getContentPane());
@@ -223,22 +225,18 @@ public class Main extends javax.swing.JFrame {
 
         javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Personal");
         javax.swing.tree.DefaultMutableTreeNode treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Gerente");
-        javax.swing.tree.DefaultMutableTreeNode treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Gerente de Planta");
-        javax.swing.tree.DefaultMutableTreeNode treeNode4 = new javax.swing.tree.DefaultMutableTreeNode(".");
-        treeNode3.add(treeNode4);
-        treeNode2.add(treeNode3);
-        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Gerente de Sucursal");
-        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode(".");
-        treeNode3.add(treeNode4);
+        javax.swing.tree.DefaultMutableTreeNode treeNode3 = new javax.swing.tree.DefaultMutableTreeNode(".");
         treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
-        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Personal General");
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Personal");
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode(".");
         treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
         jTreePersonal.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane1.setViewportView(jTreePersonal);
 
+        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
+        jTreeObjeto.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane2.setViewportView(jTreeObjeto);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -248,10 +246,10 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(72, 72, 72)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(94, 94, 94)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(92, 92, 92)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 174, Short.MAX_VALUE))
+                .addGap(0, 173, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -307,7 +305,8 @@ public class Main extends javax.swing.JFrame {
         emp.setTiempo(Integer.parseInt(tiempo_personal.getText()));
         emp.setSueldo(Double.parseDouble(sueldo_personal.getText()));
         DefaultMutableTreeNode personal = new DefaultMutableTreeNode(emp);
-        root.add(personal);
+        ((DefaultMutableTreeNode)root.getChildAt(1)).add(personal);
+        
         modelo.reload();
         jTreePersonal.setModel(modelo);
     }//GEN-LAST:event_jButton1MouseClicked
